@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Proficiency Test Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div id="app">
+        <div id="welcome-screen" class="screen">
+            <h1>Welcome to Your Day in English!</h1>
+            <p>Please enter your name to start:</p>
+            <input type="text" id="name-input" placeholder="Your Name">
+            <button onclick="startTest()">Start</button>
+        </div>
+        <div id="scenario-screen" class="screen hidden">
+            <h2>Good morning!</h2>
+            <p>How do you say "Good morning" in English?</p>
+            <input type="text" id="answer-input" placeholder="Your answer">
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+        <div id="feedback-screen" class="screen hidden">
+            <h2>Your Feedback</h2>
+            <p id="feedback-text"></p>
+            <button onclick="restartTest()">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
